@@ -1,0 +1,19 @@
+<div id="result-panel-content">
+  <h3>Definitions</h3>
+  <ul>
+    {% for meaning in meanings %}
+      {%  for definition in meaning.definitions %}
+        <li>
+          <b>Definition:</b> {{ definition.definition }}<br/>
+          <b>Example:</b> {{ definition.example }}<br/>
+          <b>synonyms:</b> {{ definition.synonyms | join(", ") }}<br/>
+          <b>antonyms:</b> {{ definition.antonyms | join(", ") }}<br/>
+        </li>
+      {% endfor %}
+    {% else %}
+      <li>
+        No definition has been found for this word 😢
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+<phpunit bootstrap="../../../core/tests/bootstrap.php"
+         colors="true"
+         stopOnFailure="false"
+         failOnWarning="false"
+         failOnRisky="false"
+         failOnIncomplete="false"
+         failOnSkipped="false">
+  <testsuites>
+    <testsuite name="my_module_tests">
+      <directory>tests/src/Unit</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist>
+      <directory suffix=".php">src/</directory>
+    </whitelist>
+  </filter>
+</phpunit>

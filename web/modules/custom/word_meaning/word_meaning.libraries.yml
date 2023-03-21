@@ -1,0 +1,16 @@
+form:
+  version: 1
+  js:
+    js/form.js: {}
+jquery:
+  version: 2.2.4
+  js:
+      "https://code.jquery.com/jquery-2.2.4.min.js": { type: external, minified: true }
+underscore:
+  version: 1.13.6
+  js:
+    "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js": { type: external, minified: true }
+backbone:
+  version: 1.4.1
+  js:
+    "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone.js": { type: external, minified: true }

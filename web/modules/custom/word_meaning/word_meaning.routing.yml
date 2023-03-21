@@ -1,0 +1,17 @@
+hello.content:
+  path: '/dictionary/{word}'
+  defaults:
+    _controller: 'word_meaning.dictionary_controller:searchDefinitions'
+  requirements:
+    _permission: 'access content'
+    word: '[a-zA-Z\s]+'
+  options:
+    no_cache: 'TRUE'
+
+word_meaning.form:
+  path: '/dictionary'
+  defaults:
+    _form: '\Drupal\word_meaning\Form\WordMeaningForm'
+    _title: 'Look for a definition'
+  requirements:
+    _permission: 'access content'

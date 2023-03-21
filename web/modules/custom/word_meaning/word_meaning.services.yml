@@ -1,0 +1,15 @@
+services:
+  word_meaning.guzzle_client:
+    class: GuzzleHttp\Client
+    arguments:
+      - base_uri: 'http://api.dictionaryapi.dev/api/v2/'
+        timeout: 1
+        http_errors: false
+        headers:
+          Accept: 'application/json'
+  word_meaning.api:
+    class: Drupal\word_meaning\Api\DictionaryApi
+    arguments: ["@word_meaning.guzzle_client"]
+  word_meaning.dictionary_controller:
+    class: Drupal\word_meaning\Controller\DictionaryController
+    arguments: ["@word_meaning.api"]
