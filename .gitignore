@@ -1,2 +1,13 @@
 vendor
 .phpunit.result.cache
+# Drupal cache files
+sites/default/files/css/*
+sites/default/files/js/*
+sites/default/files/php/*
+sites/default/files/styles/*
+sites/default/files/ctools/*
+sites/default/files/picture/*
+sites/default/files/inline-images/*
+sites/default/files/.htaccess
+sites/default/files/php.log
+sites/default/files/php_errors.log
