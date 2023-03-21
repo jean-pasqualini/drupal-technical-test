@@ -19,4 +19,6 @@ RUN apt-get update && apt-get install -y \
         zip \
         intl
 
+COPY ./wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

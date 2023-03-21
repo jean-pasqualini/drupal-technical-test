@@ -1,5 +1,0 @@
-word_meaning.settings:
-  title: 'Dictionary'
-  description: 'Look for a definition'
-  parent: system.admin_config_system
-  route_name: word_meaning.form
