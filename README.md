@@ -83,6 +83,12 @@ Go to the project directory
   cd drupal-technical-test
 ```
 
+Build image php
+
+```bash
+  docker-compose build
+```
+
 Install dependencies
 
 ```bash
