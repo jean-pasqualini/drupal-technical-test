@@ -43,7 +43,13 @@ Install dependencies
 Start the server
 
 ```bash
-  docker-compose up
+  docker-compose up -d
+```
+
+Clean drupal cache (if you have "SQLSTATE[HY000] [2002] Connection refused", wait a bit for mysql is ready)
+
+```bash
+  docker-compose run --user $(id -u) --entrypoint=/var/www/html/vendor/bin/drush php cache:rebuild
 ```
 
 Go to http://localhost/dictionary
