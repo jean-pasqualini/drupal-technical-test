@@ -92,7 +92,7 @@ Build image php
 Install dependencies
 
 ```bash
-  docker-compose run --user $(id -u) --entrypoint=/usr/local/bin/composer php install
+  docker-compose run --no-deps --user $(id -u) --entrypoint=/usr/local/bin/composer php install
 ```
 
 Start the server
